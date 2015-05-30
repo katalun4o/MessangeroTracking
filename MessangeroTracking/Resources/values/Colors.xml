@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="dark_grey">#707070</color>    
+	<color name="separator">#FFAE00</color>
+	<color name="action_bar_title_default">#737373</color>
+	<color name="action_bar_title_orange">#FFAE00</color>
+	<color name="hint_color">#7A7A7A</color>
+	<color name="delivered_color">#FF1C1C</color>
+	<color name="com_facebook_blue">#3B5998</color>    
+    <color name="com_facebook_usersettingsfragment_connected_text_color">#FFFFFF</color>
+    <color name="com_facebook_usersettingsfragment_connected_shadow_color">#000000</color>
+    <color name="com_facebook_usersettingsfragment_not_connected_text_color">#A6AED7</color>
+    <color name="com_facebook_loginview_text_color">#FFFFFF</color>
+	<color name="label_color">#292929</color>
+</resources>

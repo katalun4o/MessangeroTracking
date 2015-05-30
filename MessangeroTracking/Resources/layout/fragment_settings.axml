@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/lblUser"
+        style="@style/settings_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/User" />
+    <TextView
+        android:id="@+id/tbUser"
+        style="@style/settings_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lblUser"
+        android:layout_marginBottom="6dp"
+        android:text="" />
+    <View
+        android:id="@+id/delimiter0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/tbUser"
+        android:background="#C9C9C9" />
+    <TextView
+        android:id="@+id/lblLanguage"
+        style="@style/settings_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/delimiter0"
+        android:text="@string/Language" />
+    <TextView
+        android:id="@+id/tbLanguage"
+        style="@style/settings_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lblLanguage"
+        android:text="" />
+    <Button
+        android:id="@+id/btnLanguage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/delimiter0"
+        android:background="@android:color/transparent" />
+    <View
+        android:id="@+id/delimiter1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/btnLanguage"
+        android:background="#C9C9C9" />
+    <TextView
+        android:id="@+id/lblChangePassword"
+        style="@style/settings_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/delimiter1"
+        android:text="@string/ChangePassword" />
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/delimiter1" />
+    <View
+        android:id="@+id/delimiter2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/btnChangePassword"
+        android:background="#C9C9C9" />
+    <TextView
+        android:id="@+id/lblLogout"
+        style="@style/settings_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/delimiter2"
+        android:text="@string/Logout" />
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/delimiter2" />
+    <View
+        android:id="@+id/delimiter3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/btnLogout"
+        android:background="#C9C9C9" />
+</RelativeLayout>

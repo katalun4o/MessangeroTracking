@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E8E8E8">
+    <ProgressBar
+        android:id="@+id/activity_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginTop="-3dp"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal" />
+    <ListView
+        android:id="@+id/lstVouchers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_margin="4dp"
+        android:dividerHeight="3dp" />
+</LinearLayout>

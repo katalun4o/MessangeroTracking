@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="isTablet">0dp</dimen>
+
+    <dimen name="action_bar_height">40dp</dimen>
+    <dimen name="action_bar_button_height">40dp</dimen>
+    <dimen name="action_bar_button_width">40dp</dimen>
+    <dimen name="action_bar_button_top_margin">2dp</dimen>
+    <dimen name="action_bar_button_bottom_margin">2dp</dimen>
+    <dimen name="action_bar_button_left_margin">2dp</dimen>
+    <dimen name="action_bar_button_right_margin">2dp</dimen>
+    <dimen name="action_bar_text_size">14sp</dimen>
+    
+    <dimen name="button_corners_radius">2dp</dimen>
+    
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="main_button_text_size">14sp</dimen>
+    
+    <dimen name="main_menu_icon_size">64dp</dimen>
+    <dimen name="main_menu_text_size">15sp</dimen>
+    
+    <dimen name="caption_text_size">15sp</dimen>
+    
+    <dimen name="list_row_height">36dp</dimen>
+    <dimen name="list_row_text_size">14sp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="row_item_image_width">90dp</dimen>
+    <dimen name="row_item_image_height">90dp</dimen>
+    <dimen name="list_report_text_size">22sp</dimen>
+    <dimen name="default_textsize">14sp</dimen>
+
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_width">64dp</dimen>
+    <dimen name="com_facebook_usersettingsfragment_profile_picture_height">64dp</dimen>
+    <dimen name="com_facebook_loginview_padding_left">12dip</dimen>
+    <dimen name="com_facebook_loginview_padding_right">16dp</dimen>
+    <dimen name="com_facebook_loginview_padding_top">12dp</dimen>
+    <dimen name="com_facebook_loginview_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_loginview_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_loginview_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>    
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+
+</resources>

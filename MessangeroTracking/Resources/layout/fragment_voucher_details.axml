@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvProvider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/tvNumber"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/etNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvProvider"
+            android:textColor="#6B6B6B" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/etDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textColor="@android:color/black" />
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/chbIsDelivered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/IsDelivered"
+        android:layout_marginRight="3dp"
+        />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:id="@+id/lblStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/tvStatuses"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/separator"
+            android:textColor="@android:color/white" />
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblStatus"
+            android:indeterminate="true"
+            android:visibility="gone" />
+        <ListView
+            android:id="@+id/lstVoucherStatuses"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/lblStatus"
+            android:layout_marginTop="2dp"
+            android:divider="#000000"
+            android:dividerHeight="0dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="generalnotitle" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style> 
+
+	<style name="TitleDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+    <item name="android:background">@android:color/white</item>
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:padding">6dp</item>
+</style>
+
+	<style name="noTitleDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:width">205dp</item>
+        <item name="android:height">44dp</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#4B5164</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="tooltip_bubble_text">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:gravity">left</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">0.25</item>
+		<item name="android:shadowColor">#40000000</item>
+    </style>
+
+	<style name="normal_text_view">
+		<item name="android:textColor">@color/label_color</item>
+		<item name="android:gravity">left</item>
+		<item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="settings_name">
+		<item name="android:textColor">@color/label_color</item>
+		<item name="android:gravity">left</item>
+		<item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="settings_value">
+		<item name="android:textColor">@color/label_color</item>
+		<item name="android:gravity">left</item>
+		<item name="android:textSize">14sp</item>
+    </style>
+
+	<style name="dialog_text_view" parent="@style/normal_text_view">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:layout_marginRight">10dp</item>
+    </style>
+
+	<style name="dialog_edit_text" parent="@android:style/Widget.EditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:layout_marginRight">10dp</item>
+    </style>
+
+</resources>

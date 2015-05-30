@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessangeroTracking", "MessangeroTracking\MessangeroTracking.csproj", "{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlideMenu", "SlideMenu\SlideMenu\SlideMenu.csproj", "{DB8A7D35-8CA4-47B6-B327-BF9565183437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crashlytics", "Crashlytics\Crashlytics.csproj", "{2E37C733-32FF-4FA7-872F-B93C6961F37D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E37C733-32FF-4FA7-872F-B93C6961F37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E37C733-32FF-4FA7-872F-B93C6961F37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E37C733-32FF-4FA7-872F-B93C6961F37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E37C733-32FF-4FA7-872F-B93C6961F37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8A7D35-8CA4-47B6-B327-BF9565183437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8A7D35-8CA4-47B6-B327-BF9565183437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8A7D35-8CA4-47B6-B327-BF9565183437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8A7D35-8CA4-47B6-B327-BF9565183437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MessangeroTracking\MessangeroTracking.csproj
+	EndGlobalSection
+EndGlobal

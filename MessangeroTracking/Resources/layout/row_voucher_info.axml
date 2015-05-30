@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/list_item_status_background">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_weight="0.25">
+            <TextView
+                android:id="@+id/tvDelivered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivered"
+                android:textColor="@color/delivered_color"
+                android:textSize="10sp"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/ivProvider"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvDelivered"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/tvProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/ivProvider"
+                android:minWidth="80dp"
+                android:text="ELTA"
+                android:layout_marginTop="1dp"
+                android:textColor="#ac1a2f"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProvider"
+            android:layout_marginBottom="2dp"
+            android:padding="2dp"
+            android:layout_weight="0.75"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sports Direct"
+                android:textColor="#2f2e2e"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2f2e2e"
+                android:textSize="12sp" />
+            <CheckBox
+                android:id="@+id/chbSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/tvName"
+                android:gravity="center"
+                android:focusable="false"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" />
+            <TextView
+                android:id="@+id/tvLastStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_below="@id/tvNumber"
+                android:layout_toLeftOf="@id/chbSelect"
+                android:textColor="#767676"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_below="@id/tvLastStatus"
+                android:layout_toLeftOf="@id/chbSelect"
+                android:textColor="#9d0202"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

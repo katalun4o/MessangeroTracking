@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3A4BEFF-0C4C-41FE-AC22-1EF3510170B1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MessangeroTracking</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>MessangeroTracking</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Json" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+    <Reference Include="zxing.monoandroid">
+      <HintPath>..\..\..\..\XamarinSQLite\zxing.net.mobile-1.4.2\zxing.net.mobile-1.4.2\lib\android\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\..\..\..\XamarinSQLite\zxing.net.mobile-1.4.2\zxing.net.mobile-1.4.2\lib\android\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\Components\azure-mobile-services-1.2.1\lib\android\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\Components\azure-mobile-services-1.2.1\lib\android\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\azure-mobile-services-1.2.1\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\Components\azure-mobile-services-1.2.1\lib\android\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\Components\azure-mobile-services-1.2.1\lib\android\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net" />
+    <Reference Include="Facebook">
+      <HintPath>..\Components\facebook-sdk-6.2.1\lib\android\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\dll\ActionBarSherlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv4-18-4.18.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\Components\googleplayservices-13.0\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fragments\fragmentMainMenu.cs" />
+    <Compile Include="Base\WebServiceHelper.cs" />
+    <Compile Include="Fragments\fragmentVouchersList.cs" />
+    <Compile Include="Data\VoucherStatus.cs" />
+    <Compile Include="Adapters\adapterVoucherStatuses.cs" />
+    <Compile Include="Fragments\fragmentVoucherDetails.cs" />
+    <Compile Include="Data\VoucherInfo.cs" />
+    <Compile Include="Base\DBManager.cs" />
+    <Compile Include="Adapters\adapterVouchers.cs" />
+    <Compile Include="Adapters\adapterProviders.cs" />
+    <Compile Include="Data\Provider.cs" />
+    <Compile Include="Fragments\fragmentSlideMenu.cs" />
+    <Compile Include="Data\VoucherList.cs" />
+    <Compile Include="Base\ProviderSelectedEventArgs.cs" />
+    <Compile Include="Adapters\adapterDialogProviders.cs" />
+    <Compile Include="Fragments\fragmentVoucherEditor.cs" />
+    <Compile Include="Base\GcmBroadcastReceiver.cs" />
+    <Compile Include="Base\GCMIntentService.cs" />
+    <Compile Include="Fragments\fragmentLogin.cs" />
+    <Compile Include="Base\PreferencesUtil.cs" />
+    <Compile Include="Fragments\fragmentCreateAccount.cs" />
+    <Compile Include="Fragments\fragmentLoading.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="FBWebViewAuthActivity.cs" />
+    <Compile Include="Base\CrashReporting.cs" />
+    <Compile Include="Data\ForgotPasswordResult.cs" />
+    <Compile Include="Fragments\fragmentSettings.cs" />
+    <Compile Include="Adapters\adapterLanguages.cs" />
+    <Compile Include="Data\LanguageInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\row_voucher_status.axml" />
+    <AndroidResource Include="Resources\layout\fragment_voucher_details.axml" />
+    <AndroidResource Include="Resources\layout\fragment_main_menu.axml" />
+    <AndroidResource Include="Resources\layout\fragment_vouchers_list.axml" />
+    <AndroidResource Include="Resources\layout\row_voucher_info.axml" />
+    <AndroidResource Include="Resources\values\Dimens.xml" />
+    <AndroidResource Include="Resources\drawable\Shadow.xml" />
+    <AndroidResource Include="Resources\layout\slide_menu_content.axml" />
+    <AndroidResource Include="Resources\layout\row_provider.axml" />
+    <AndroidResource Include="Resources\layout\fragment_slide_menu.axml" />
+    <AndroidResource Include="Resources\menu\menu_main_fragment.xml" />
+    <AndroidResource Include="Resources\layout\settings_action_provider.axml" />
+    <AndroidResource Include="Resources\layout\dialog_providers.axml" />
+    <AndroidResource Include="Resources\layout\row_dialog_provider.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\list_item_header.xml" />
+    <AndroidResource Include="Resources\drawable\list_voucher_provider_background.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_discard.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_discard.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_discard.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_discard.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\actionbar_title.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_save.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_save.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_save.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_save.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\layout\fragment_voucher_editor.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_edit.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_edit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_edit.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_edit.png" />
+    <AndroidResource Include="Resources\drawable\logo_elta.jpg" />
+    <AndroidResource Include="Resources\drawable\list_item_status_background.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_map.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_map.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_map.png" />
+    <AndroidResource Include="Resources\layout\fragment_login.axml" />
+    <AndroidResource Include="Resources\layout\fragment_register.axml" />
+    <AndroidResource Include="Resources\layout\fragment_loading.axml" />
+    <AndroidResource Include="Resources\values-gr\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_blue.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_blue_focused.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_blue_normal.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_blue_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_check.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_check_off.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_check_on.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_grey_focused.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_grey_normal.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_button_grey_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_close.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_inverse_icon.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_list_divider.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_list_section_header_background.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_loginbutton_silver.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_logo.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_item_background.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_focused.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_longpressed.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_selector.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_selector_background_transition.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_list_selector_disabled.9.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_picker_top_button.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_place_default_icon.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_profile_default_icon.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_profile_picture_blank_portrait.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_profile_picture_blank_square.png" />
+    <AndroidResource Include="Resources\drawable\com_facebook_top_background.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_top_button.xml" />
+    <AndroidResource Include="Resources\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_blue_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_blue_normal.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_blue_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_grey_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_grey_normal.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_button_grey_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_close.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_inverse_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_picker_magnifier.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_black_background.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_black_topnub.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_black_xout.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_blue_background.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_blue_topnub.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\com_facebook_tooltip_blue_xout.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_button_blue_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_button_blue_normal.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_button_blue_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_inverse_icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_picker_magnifier.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_black_background.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_black_topnub.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_black_xout.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_blue_background.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_blue_topnub.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\com_facebook_tooltip_blue_xout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_blue_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_blue_normal.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_blue_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_grey_focused.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_grey_normal.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_button_grey_pressed.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_close.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_inverse_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_picker_magnifier.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_black_background.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_black_topnub.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_black_xout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_blue_background.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_blue_topnub.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\com_facebook_tooltip_blue_xout.png" />
+    <AndroidResource Include="Resources\drawable\btn_barcode.png" />
+    <AndroidResource Include="Resources\layout\dialog_forgot_password.axml" />
+    <AndroidResource Include="Resources\layout\fragment_settings.axml" />
+    <AndroidResource Include="Resources\layout\dialog_change_password.axml" />
+    <AndroidResource Include="Resources\layout\dialog_languages.axml" />
+    <AndroidResource Include="Resources\layout\row_language.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Fragments\" />
+    <Folder Include="Base\" />
+    <Folder Include="Data\" />
+    <Folder Include="Adapters\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\values-gr\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SlideMenu\SlideMenu\SlideMenu.csproj">
+      <Project>{DB8A7D35-8CA4-47B6-B327-BF9565183437}</Project>
+      <Name>SlideMenu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crashlytics\Crashlytics.csproj">
+      <Project>{2E37C733-32FF-4FA7-872F-B93C6961F37D}</Project>
+      <Name>Crashlytics</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="azure-mobile-services">
+      <Version>1.2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>4.18.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googleplayservices">
+      <Version>13.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="facebook-sdk">
+      <Version>6.2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
